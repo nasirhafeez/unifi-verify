@@ -51,7 +51,7 @@ if ($result->num_rows >= 1) {
       <section class="section">
         <div class="container">
           <div id="login" class="content is-size-5 has-text-centered has-text-weight-bold">Enter your details</div>
-          <form method="post" action="connect.php" onsubmit="disableButton(this)">
+          <form method="post" action="connect.php">
             <div class="field">
                 <div class="control has-icons-left">
                     <input class="input" type="text" id="form_font" name="fname" placeholder="First Name" required>
