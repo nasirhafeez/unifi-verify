@@ -10,16 +10,16 @@ $_SESSION["user_type"] = "new";
 # Checking DB to see if user exists or not.
 $result = mysqli_query($con, "SELECT * FROM `$table_name` WHERE mac='$_SESSION[id]'");
 
-if ($result->num_rows >= 1) {
-  $row = mysqli_fetch_array($result);
-
-  mysqli_close($con);
-
-  $_SESSION["user_type"] = "repeat";
-  header("Location: welcome.php");
-} else {
-  mysqli_close($con);
-}
+//if ($result->num_rows >= 1) {
+//  $row = mysqli_fetch_array($result);
+//
+//  mysqli_close($con);
+//
+//  $_SESSION["user_type"] = "repeat";
+//  header("Location: welcome.php");
+//} else {
+//  mysqli_close($con);
+//}
 
 ?>
 <!doctype html>
