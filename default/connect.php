@@ -11,15 +11,16 @@ $user_type = $_SESSION["user_type"];
 $last_updated = date("Y-m-d H:i:s");
 
 if ($user_type == "new") {
-  $fname = $_POST['fname'];
-  $lname = $_POST['lname'];
+  $name = $_POST['name'];
+  $phone = $_POST['country_code'] . $_POST['phone_number'];
+  $phone = trim($phone);
   $email = $_POST['email'];
 
   mysqli_query($con, "
     CREATE TABLE IF NOT EXISTS `$table_name` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    `firstname` varchar(45) NOT NULL,
-    `lastname` varchar(45) NOT NULL,
+    `name` varchar(45) NOT NULL,
+    `phone` varchar(20) NOT NULL,
     `email` varchar(45) NOT NULL,
     `mac` varchar(45) NOT NULL,
     `last_updated` varchar(45) NOT NULL,
@@ -27,7 +28,7 @@ if ($user_type == "new") {
     UNIQUE KEY (mac)
     )");
 
-  mysqli_query($con,"INSERT INTO `$table_name` (firstname, lastname, email, mac, last_updated) VALUES ('$fname', '$lname', '$email', '$mac', '$last_updated')");
+  mysqli_query($con,"INSERT INTO `$table_name` (`name`, phone, email, mac, last_updated) VALUES ('$name', '$phone', '$email', '$mac', '$last_updated')");
 }
 
 $controlleruser = $_SERVER['CONTROLLER_USER'];
