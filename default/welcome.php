@@ -31,9 +31,9 @@ require 'header.php';
   <div class="main">
     <seection class="section">
       <div class="container">
-        <div id="margin_zero" class="content has-text-centered is-size-6">Welcome!</div>
-        <div id="margin_zero" class="content has-text-centered is-size-6">You'll be automatically authorized</div>
-        <div id="margin_zero" class="content has-text-centered is-size-6">on the network in a few moments</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">Bem-vindo!</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">Você será autorizado automaticamente</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">em alguns momentos</div>
       </div>
     </seection>
   </div>
