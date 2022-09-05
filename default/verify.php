@@ -11,9 +11,12 @@ use Twilio\Rest\Client;
 $twilio = new Client($sid, $token);
 
 if (!isset($_POST['verify'])) {
-  $phone = $_POST['country_code'].$_POST['phone_number'];
+  $_SESSION['fname'] = $_POST['fname'];
+  $_SESSION['lname'] = $_POST['lname'];
+  $_SESSION['email'] = $_POST['email'];
+  //  $phone = $_POST['country_code'].$_POST['phone_number'];
+  $phone = $_POST['phone'];
   $_SESSION['phone'] = trim($phone);
-  $_SESSION['name'] = $_POST['name'];
 
   $verification = $twilio->verify->v2->services($serviceid)
     ->verifications
