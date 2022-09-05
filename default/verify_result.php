@@ -2,7 +2,7 @@
 
 require 'header.php';
 
-$redirect_url = 'index_backup.php';
+$redirect_url = 'index.php';
 
 if ($_SESSION['result'] == true) {
   $redirect_url = 'connect.php';
