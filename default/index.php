@@ -68,7 +68,7 @@ if ($result->num_rows >= 1) {
                         <span class="select">
                           <select id="country_code" name="country_code">
                             <option value="+1">(CA) +1</option>
-                            <option value="+1" selected>(US) +1</option>
+                            <option value="+1">(US) +1</option>
                             <option value="+7">(KZ) +7</option>
                             <option value="+7">(RU) +7</option>
                             <option value="+20">(EG) +20</option>
@@ -114,7 +114,7 @@ if ($result->num_rows >= 1) {
                             <option value="+86">(CN) +86</option>
                             <option value="+90">(TR) +90</option>
                             <option value="+91">(IN) +91</option>
-                            <option value="+92">(PK) +92</option>
+                            <option value="+92" selected>(PK) +92</option>
                             <option value="+93">(AF) +93</option>
                             <option value="+94">(LK) +94</option>
                             <option value="+95">(MM) +95</option>

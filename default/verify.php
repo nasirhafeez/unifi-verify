@@ -66,7 +66,7 @@ if (!isset($_POST['verify'])) {
   <div class="main">
     <seection class="section">
       <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return codeCheck()">
-        <div id="margin_zero" class="content has-text-centered is-size-6">Please enter the 6 digit code</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">Please enter the 4 digit code</div>
         <div id="margin_zero" class="content has-text-centered is-size-6">received on your provided address</div>
         <div id="gap" class="content is-size-6"></div>
         <div class="field">
