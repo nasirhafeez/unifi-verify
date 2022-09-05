@@ -41,15 +41,15 @@ if ($_SESSION['result'] == true) {
       <?php
       if ($_SESSION['result'] == true) {
         ?>
-        <div id="margin_zero" class="content has-text-centered is-size-6">Great! Your code has been approved!</div>
-        <div id="margin_zero" class="content has-text-centered is-size-6">You'll be automatically authorized</div>
-        <div id="margin_zero" class="content has-text-centered is-size-6">in a few moments</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">Ótimo! O código foi aprovado!</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">Você será autorizado automaticamente</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">em alguns momentos</div>
         <?php
       } else {
         ?>
-        <div id="margin_zero" class="content has-text-centered is-size-6">Sorry! The code you entered</div>
-        <div id="margin_zero" class="content has-text-centered is-size-6">is not correct. You'll shortly be</div>
-        <div id="margin_zero" class="content has-text-centered is-size-6">redirected back to our main page</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">Sinto muito! O código inserido</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">não está correto. Você será</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">redirecionado a página inicial</div>
         <?php
       }
       ?>

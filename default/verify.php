@@ -68,19 +68,18 @@ if (!isset($_POST['verify'])) {
 
   <div class="main">
     <seection class="section">
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return codeCheck()">
-        <div id="margin_zero" class="content has-text-centered is-size-6">Please enter the 4 digit code</div>
-        <div id="margin_zero" class="content has-text-centered is-size-6">received on your provided address</div>
+      <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <div id="margin_zero" class="content has-text-centered is-size-6">Por favor insira o código</div>
+        <div id="margin_zero" class="content has-text-centered is-size-6">de 4 dígitos recebido</div>
         <div id="gap" class="content is-size-6"></div>
         <div class="field">
           <div class="control has-icons-left">
-            <input class="input" type="number" name="code" id="code" placeholder="Code" required>
+            <input class="input" type="number" name="code" id="code" placeholder="Code" minlength="4" maxlength="4" required>
             <span class="icon is-small is-left">
                 <i class="fas fa-comment"></i>
               </span>
           </div>
         </div>
-        <p class="help is-warning" id="codeError" style="display:none;">Code Invalid: not a 4 digit number</p>
         <div class="buttons is-centered">
           <input class="button is-dark" type="submit" name="verify" value="Verify">
         </div>
@@ -89,21 +88,6 @@ if (!isset($_POST['verify'])) {
   </div>
 
 </div>
-
-<script>
-    function codeCheck() {
-        var codeInput = document.getElementById('code').value;
-
-        //The SMS code has to be a 6 digit number. Checking for that:
-
-        if (codeInput.length != 4 || isNaN(codeInput)) {
-            document.getElementById("codeError").style.display = "block";
-            return false;
-        } else {
-            return true;
-        }
-    }
-</script>
 </body>
 
 </html>
