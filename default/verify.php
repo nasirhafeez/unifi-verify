@@ -25,8 +25,12 @@ if (!isset($_POST['verify'])) {
   $verification_check = $twilio->verify->v2->services($serviceid)
     ->verificationChecks
     ->create(
-      $_SESSION['code'],
-      ["to" => $_SESSION['phone']]
+//      $_SESSION['code'],
+//      ["to" => $_SESSION['phone']]
+      [
+        "to" => $_SESSION['phone'],
+        "code" => $_SESSION['code']
+      ]
     );
 
   if ($verification_check->status == "approved") {
