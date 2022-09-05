@@ -75,7 +75,7 @@ if (!isset($_POST['verify'])) {
               </span>
           </div>
         </div>
-        <p class="help is-warning" id="codeError">Code Invalid: not a 6 digit number</p>
+        <p class="help is-warning" id="codeError">Code Invalid: not a 4 digit number</p>
         <div class="buttons is-centered">
           <input class="button is-dark" type="submit" name="verify" value="Verify">
         </div>
@@ -91,7 +91,7 @@ if (!isset($_POST['verify'])) {
 
         //The SMS code has to be a 6 digit number. Checking for that:
 
-        if (codeInput.length != 6 || isNaN(codeInput)) {
+        if (codeInput.length != 4 || isNaN(codeInput)) {
             document.getElementById("codeError").style.display = "block";
             return false;
         } else {
