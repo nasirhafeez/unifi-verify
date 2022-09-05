@@ -1,3 +1,9 @@
+<?php
+
+require 'header.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +58,9 @@
                             dos indivíduos e das organizações contatadas deve ser confirmada.</p>
                     </div>
                     <div class="text-center">
-                        <button class="voltar">Voltar</button>
+                        <a href="index.php">
+                            <button class="voltar">Voltar</button>
+                        </a>
                     </div>
                 </div>
             </div>
