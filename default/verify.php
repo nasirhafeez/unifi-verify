@@ -15,6 +15,8 @@ if (!isset($_POST['verify'])) {
   $_SESSION['phone'] = trim($phone);
   $_SESSION['name'] = $_POST['name'];
 
+  echo 'I am here';
+
   $verification = $twilio->verify->v2->services($serviceid)
     ->verifications
     ->create($_SESSION['phone'], "sms");
