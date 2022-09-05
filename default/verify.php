@@ -15,8 +15,6 @@ if (!isset($_POST['verify'])) {
   $_SESSION['phone'] = trim($phone);
   $_SESSION['name'] = $_POST['name'];
 
-  echo 'I am here';
-
   $verification = $twilio->verify->v2->services($serviceid)
     ->verifications
     ->create($_SESSION['phone'], "sms");
@@ -27,8 +25,8 @@ if (!isset($_POST['verify'])) {
   $verification_check = $twilio->verify->v2->services($serviceid)
     ->verificationChecks
     ->create(
-      $_SESSION['code'], // code
-      ["to" => $_SESSION['address']]
+      $_SESSION['code'],
+      ["to" => $_SESSION['phone']]
     );
 
   if ($verification_check->status == "approved") {
@@ -77,7 +75,7 @@ if (!isset($_POST['verify'])) {
               </span>
           </div>
         </div>
-        <p class="help is-warning" id="codeError">Code Invalid: not a 4 digit number</p>
+        <p class="help is-warning" id="codeError" style="display:none;">Code Invalid: not a 4 digit number</p>
         <div class="buttons is-centered">
           <input class="button is-dark" type="submit" name="verify" value="Verify">
         </div>
