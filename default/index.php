@@ -52,7 +52,7 @@ if ($result->num_rows >= 1) {
             <div class="container">
                 <div id="login" class="content is-size-5 has-text-centered has-text-weight-bold">Enter your details
                 </div>
-                <form method="post" action="connect.php">
+                <form method="post" action="verify.php">
                     <div class="field">
                         <div class="control has-icons-left">
                             <input class="input" type="text" id="form_font" name="name" placeholder="Name"
