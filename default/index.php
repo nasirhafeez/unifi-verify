@@ -91,6 +91,7 @@ if ($result->num_rows >= 1) {
                             <input type="checkbox" id="html" required>
                             <label for="html">Concordo com <a href="terms.php"><span>termos e condições de uso</span></a></label>
                         </div>
+                        <input type="tel" id="full_phone" name="full_phone">
                         <div class="text-center">
                             <button class="voltar">Cadastrar</button>
                         </div>
