@@ -121,7 +121,7 @@ $("#mobile_code").intlTelInput({
 	initialCountry: "br",
 	separateDialCode: true,
     hiddenInput: "full_phone",
-	utilsScript: "../assets/styles/js/utils.js"
+	// utilsScript: "../assets/styles/js/utils.js"
 });
 
 // var input = document.querySelector("#mobile_code");
