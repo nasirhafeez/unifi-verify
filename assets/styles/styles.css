@@ -363,6 +363,7 @@ p {
 }
 .country-select{
   display: flex;
+  flex-wrap: nowrap;
 }
 .country-select .iti{
   flex-grow: 1;
