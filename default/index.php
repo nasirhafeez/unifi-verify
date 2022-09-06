@@ -117,15 +117,17 @@ if ($result->num_rows >= 1) {
 <script src="../assets/styles/js/intl-tell-input.js"></script>
 <script>
     // -----Country Code Selection
-$("#mobile_code").intlTelInput({
-	initialCountry: "br",
-	separateDialCode: true,
-	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
-});
+// $("#mobile_code").intlTelInput({
+// 	initialCountry: "br",
+// 	separateDialCode: true,
+// 	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+// });
 
 var input = document.querySelector("#mobile_code");
 window.intlTelInput(input, {
     hiddenInput: "full_phone",
+    initialCountry: "br",
+    separateDialCode: true,
     utilsScript: "../assets/styles/js/utils.js" // just for formatting/placeholders etc
 });
 
