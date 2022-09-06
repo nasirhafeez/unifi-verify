@@ -121,16 +121,8 @@ $("#mobile_code").intlTelInput({
 	initialCountry: "br",
 	separateDialCode: true,
     hiddenInput: "full_phone",
-	// utilsScript: "../assets/styles/js/utils.js"
+	utilsScript: "../assets/styles/js/utils.js"
 });
-
-// var input = document.querySelector("#mobile_code");
-// window.intlTelInput(input, {
-//     hiddenInput: "full_phone",
-//     initialCountry: "br",
-//     separateDialCode: true,
-//     utilsScript: "../assets/styles/js/utils.js" // just for formatting/placeholders etc
-// });
 
 </script>
 </body>
