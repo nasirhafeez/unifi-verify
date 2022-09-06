@@ -83,15 +83,15 @@ if ($result->num_rows >= 1) {
                                     <img src="../assets/images/phone.svg" style="width: 25px;" alt="">
                                 </span>
                                
-                                <input type="text" name="phone[main]" class="form-control " id="mobile_code"
+                                <input type="text" name="phone" class="form-control " id="mobile_code"
                                        aria-describedby="basic-addon1" required>
                             </div>
                         </div>
+                        <input type="tel" id="full_phone" name="full_phone" hidden>
                         <div class="checkbox text-center mb-15px">
                             <input type="checkbox" id="html" required>
                             <label for="html">Concordo com <a href="terms.php"><span>termos e condições de uso</span></a></label>
                         </div>
-                        <input type="tel" id="full_phone" name="full_phone" hidden>
                         <div class="text-center">
                             <button class="voltar">Cadastrar</button>
                         </div>
