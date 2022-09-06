@@ -30,11 +30,9 @@ if ($result->num_rows >= 1) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
+   
     <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/intl-tell-input.css">
     <title>Case Tegra</title>
 </head>
 
@@ -48,47 +46,48 @@ if ($result->num_rows >= 1) {
                         <img src="../assets/images/logo.png" alt="">
                     </div>
                     <form method="post" action="verify.php">
-                        <div class="input">
+                        <div class="input mb-15px">
                             <label for="">Nome:</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">
                                         <img src="../assets/images/user.svg" style="width: 25px;" alt="">
                                     </span>
-                                <input type="text" name="fname" class="form-control" aria-label="Username"
+                                <input type="text" name="fname" class="form-control" 
                                        aria-describedby="basic-addon1" required>
                             </div>
                         </div>
-                        <div class="input">
+                        <div class="input mb-15px">
                             <label for="">Sobrenome:</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">
                                         <img src="../assets/images/user.svg" style="width: 25px;" alt="">
                                     </span>
-                                <input type="text" name="lname" class="form-control" aria-label="Username"
+                                <input type="text" name="lname" class="form-control" 
                                        aria-describedby="basic-addon1" required>
                             </div>
                         </div>
-                        <div class="input">
+                        <div class="input mb-15px">
                             <label for="">E-mail:</label>
-                            <div class="input-group mb-3">
+                            <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">
                                          <img src="../assets/images/mail.svg" style="width: 25px;" alt="">
                                     </span>
-                                <input type="text" name="email" class="form-control" aria-label="Username"
+                                <input type="text" name="email" class="form-control" 
                                        aria-describedby="basic-addon1" required>
                             </div>
                         </div>
-                        <div class="input">
+                        <div class="input mb-15px">
                             <label for="">Calular:</label>
-                            <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="../assets/images/phone.svg" style="width: 25px;" alt="">
-                                    </span>
-                                <input type="text" name="phone" class="form-control" aria-label="Username"
+                            <div class="input-group country-select">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <img src="../assets/images/phone.svg" style="width: 25px;" alt="">
+                                </span>
+                               
+                                <input type="text" name="phone" class="form-control " id="mobile_code" 
                                        aria-describedby="basic-addon1" required>
                             </div>
                         </div>
-                        <div class="checkbox text-center">
+                        <div class="checkbox text-center mb-15px">
                             <input type="checkbox" id="html" required>
                             <label for="html">Concordo com <a href="terms.php"><span>termos e condições de uso</span></a></label>
                         </div>
@@ -113,7 +112,17 @@ if ($result->num_rows >= 1) {
         </div>
     </div>
 </div>
-
+<script src="../assets/styles/js/jquery-3.4.1.js"></script>
+<script src="../assets/styles/js/popper.js"></script>
+<script src="../assets/styles/js/intl-tell-input.js"></script>
+<script>
+    // -----Country Code Selection
+$("#mobile_code").intlTelInput({
+	initialCountry: "pk",
+	separateDialCode: true,
+	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+});
+</script>
 </body>
 
 </html>

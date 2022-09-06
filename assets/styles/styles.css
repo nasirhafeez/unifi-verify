@@ -2,6 +2,22 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+@font-face {
+  font-family: "mont-reg";
+  src: url("../fonts/static/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "mont-med";
+  src: url("../fonts/static/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "mont-sb";
+  src: url("../fonts/static/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "mont-b";
+  src: url("../fonts/static/Montserrat-Bold.ttf");
+}
 
 html, body {
   height: 100%;
@@ -10,7 +26,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont-reg" ,"mont-med", "mont-sb" , 'mont-b';
 }
 
 p {
@@ -135,7 +151,7 @@ p {
   }
 }
 .wrapper .content .grey-box .grey-box-content > div p:first-of-type {
-  font-weight: 800;
+  font-family: 'mont-b';
   font-size: 18px;
   margin-bottom: 6px;
 }
@@ -145,7 +161,7 @@ p {
   }
 }
 .wrapper .content .grey-box .grey-box-content > div p:last-of-type {
-  font-weight: 500;
+  font-family: 'mont-med';
   font-size: 16px;
 }
 @media (max-width: 600px) {
@@ -213,7 +229,7 @@ p {
   }
 }
 .input label {
-  font-weight: 500;
+  font-family: 'mont-med';
   font-size: 16px;
   margin-bottom: 6px;
   display: inline-block;
@@ -309,7 +325,7 @@ p {
 .checkbox label {
   position: relative;
   cursor: pointer;
-  font-weight: 500;
+  font-family: 'mont-med';
 }
 .checkbox label span {
   color: #F0C70B;
@@ -344,4 +360,14 @@ p {
   border-width: 0 5px 5px 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+.country-select{
+  display: flex;
+}
+.country-select .iti{
+  flex-grow: 1;
+} 
+.country-select .form-control{
+  border-radius: 0 8px 8px 0;
+  
 }
