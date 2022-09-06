@@ -83,11 +83,10 @@ if ($result->num_rows >= 1) {
                                     <img src="../assets/images/phone.svg" style="width: 25px;" alt="">
                                 </span>
                                
-                                <input type="text" name="phone" class="form-control " id="mobile_code"
+                                <input type="text" name="phone" class="form-control " id="phone"
                                        aria-describedby="basic-addon1" required>
                             </div>
                         </div>
-                        <input type="tel" id="full_phone" name="full_phone" hidden>
                         <div class="checkbox text-center mb-15px">
                             <input type="checkbox" id="html" required>
                             <label for="html">Concordo com <a href="terms.php"><span>termos e condições de uso</span></a></label>
@@ -123,6 +122,13 @@ $("#mobile_code").intlTelInput({
 	separateDialCode: true,
 	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
 });
+
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
+    hiddenInput: "full_phone",
+    utilsScript: "../assets/styles/js/utils.js" // just for formatting/placeholders etc
+});
+
 </script>
 </body>
 
