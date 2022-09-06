@@ -10,10 +10,12 @@ use Twilio\Rest\Client;
 
 $twilio = new Client($sid, $token);
 
-$phone = $_POST['phone'];
-$_SESSION['phone'] = trim($phone);
+print_r($_POST);
 
-echo $_SESSION['phone'];
+//$phone = $_POST['phone'];
+//$_SESSION['phone'] = trim($phone);
+//
+//echo $_SESSION['phone'];
 /*
 if (!isset($_POST['verify'])) {
   $_SESSION['fname'] = $_POST['fname'];
