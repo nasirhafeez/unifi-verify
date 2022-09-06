@@ -123,11 +123,11 @@ $("#mobile_code").intlTelInput({
 	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
 });
 
-var input = document.querySelector("#phone");
-window.intlTelInput(input, {
-    hiddenInput: "full_phone",
-    utilsScript: "../assets/styles/js/utils.js" // just for formatting/placeholders etc
-});
+// var input = document.querySelector("#phone");
+// window.intlTelInput(input, {
+//     hiddenInput: "full_phone",
+//     utilsScript: "../assets/styles/js/utils.js" // just for formatting/placeholders etc
+// });
 
 </script>
 </body>
