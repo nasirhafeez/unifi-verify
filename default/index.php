@@ -83,7 +83,7 @@ if ($result->num_rows >= 1) {
                                     <img src="../assets/images/phone.svg" style="width: 25px;" alt="">
                                 </span>
                                
-                                <input type="text" name="phone" class="form-control " id="phone"
+                                <input type="text" name="phone" class="form-control " id="mobile_code"
                                        aria-describedby="basic-addon1" required>
                             </div>
                         </div>
@@ -126,7 +126,7 @@ $("#mobile_code").intlTelInput({
 // var input = document.querySelector("#phone");
 // window.intlTelInput(input, {
 //     hiddenInput: "full_phone",
-//     utilsScript: "../assets/styles/js/utils.js" // just for formatting/placeholders etc
+//     utilsScript: "../../build/js/utils.js?1638200991544" // just for formatting/placeholders etc
 // });
 
 </script>
