@@ -10,7 +10,7 @@ use Twilio\Rest\Client;
 
 $twilio = new Client($sid, $token);
 
-print_r($_POST);
+print_r($_REQUEST);
 
 //$phone = $_POST['phone'];
 //$_SESSION['phone'] = trim($phone);
