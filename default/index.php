@@ -83,7 +83,7 @@ if ($result->num_rows >= 1) {
                                     <img src="../assets/images/phone.svg" style="width: 25px;" alt="">
                                 </span>
                                
-                                <input type="text" name="phone" class="form-control " id="mobile_code" 
+                                <input type="text" name="phone[main]" class="form-control " id="mobile_code"
                                        aria-describedby="basic-addon1" required>
                             </div>
                         </div>
