@@ -81,7 +81,7 @@ if (!isset($_POST['verify'])) {
           </div>
         </div>
         <div class="buttons is-centered">
-          <input class="button is-dark" type="submit" name="verify" value="Verify">
+          <input class="button is-dark" type="submit" name="verify" value="Validar">
         </div>
       </form>
     </seection>
